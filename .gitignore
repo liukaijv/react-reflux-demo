@@ -1,0 +1,8 @@
+vendor
+node_modules
+public/storage
+public/uploads
+.env
+.idea
+public/admin
+npm-debug.log
