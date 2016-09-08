@@ -4,7 +4,7 @@
 
 ## 线上演示
 
-[demo](http://115.28.223.2:9000/admin/ "demo")
+[demo](http://115.28.223.2:9002/admin/ "demo")
 
 账号: demo 或者 demo@qq.com
 
@@ -60,7 +60,8 @@ php artisan db:seed
 npm run web
 //localhost:8000
 
-// 前台测试
+// 源码目录 resources/assets/js/src
+// 开发测试
 npm run dev
 // localhost:3000
 

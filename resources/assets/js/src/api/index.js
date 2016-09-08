@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 let instance = axios.create({
-	baseURL: 'backend'
+	baseURL: '/backend'
 });
 
 instance.interceptors.request.use(function (config) {
