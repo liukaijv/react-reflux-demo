@@ -13,7 +13,8 @@ const defaultUser = {
 	name: '',
 	email: '',
 	image: '',
-	isLoggedIn: false  
+	isLoggedIn: false,
+	msg: ''  
 };
 
 let currentUser = Object.assign({}, defaultUser);
@@ -53,9 +54,9 @@ export default Reflux.createStore({
 					isLoggedIn: true	
 				}
 				this.trigger(currentUser)
-				window.location.reload()
+				window.location.reload()				
 			}else{
-				currentUser = Object.assign({}, defaultUser);
+				currentUser = Object.assign({}, defaultUser, {msg:data.msg});
 				this.trigger(currentUser);				
 			}			
 			

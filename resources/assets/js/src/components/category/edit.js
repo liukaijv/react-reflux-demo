@@ -27,7 +27,7 @@ export default class CategroyEdit extends Base {
 	}
 
 	componentWillMount(){
-		this.listenTo(CategoryStore,this.onStoreUpdate);
+		this.listenTo(CategoryStore,this.onStoreUpdate);		
 	}
 
 	componentDidMount(){		
@@ -45,7 +45,7 @@ export default class CategroyEdit extends Base {
 				});
 			break;
 			case 'updateSuccess':
-				hashHistory.push('/category/index')
+				hashHistory.push('/category/index');				
 			break;
 			case 'updateFail':				
 				this.setState({
